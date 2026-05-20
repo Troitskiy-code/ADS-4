@@ -40,7 +40,8 @@ int countPairs2(int* arr, int len, int value) {
             }
             if (first != -1) {
                 int targetCount = 1;
-                while (first + targetCount < len && arr[first + targetCount] == target) {
+                while (first + targetCount < len &&
+                       arr[first + targetCount] == target) {
                     targetCount++;
                 }
                 count += currentCount * targetCount;
